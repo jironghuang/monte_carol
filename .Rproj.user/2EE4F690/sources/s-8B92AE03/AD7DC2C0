@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556640133271.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AD7DC2C0",
+    "lastKnownWriteTime" : 1556640434,
+    "last_content_update" : 1556640434311,
+    "path" : "~/Desktop/github/monte_carlo/simulate_failure.R",
+    "project_path" : "simulate_failure.R",
+    "properties" : {
+        "cursorPosition" : "11,22",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

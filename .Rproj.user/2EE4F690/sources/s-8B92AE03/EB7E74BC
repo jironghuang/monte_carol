@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556633674504.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EB7E74BC",
+    "lastKnownWriteTime" : 1556638567,
+    "last_content_update" : 1556638567976,
+    "path" : "~/Desktop/github/monte_carlo/sim_shopping.R",
+    "project_path" : "sim_shopping.R",
+    "properties" : {
+        "cursorPosition" : "73,10",
+        "scrollLine" : "64"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

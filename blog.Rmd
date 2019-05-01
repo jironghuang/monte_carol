@@ -1,0 +1,66 @@
+---
+title: "simulate_failure"
+author: "Jirong"
+date: "1 May 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Simulating product failures
+
+I'm inspired by this post here (http://www.programmingr.com/examples/neat-tricks/sample-r-function/rexp/). And decided to expand on this example.
+
+Say you are an owner of a computer store and you would like to estimate the cost of paying up on warranty repairs.
+
+Here are the assumptions,
+- Each computer is expected to last 7 years
+- You only sell 1000 computers at the start of each year
+- You sell computer up to 7th year
+
+
+```{r}
+set.seed(1) 
+library(tidyr)
+
+sim_repair_time = mapply(rexp, rep(1000, 7), rep(1/7, 7))
+sim_repair_time = data.frame(sim_repair_time)
+names(sim_repair_time) = paste0("Y", 2019:2025)
+sim_repair_time$comp_index = 1:nrow(sim_repair_time)
+
+sim_repair_time = sim_repair_time %>% gather(key = year, 
+                                     value = spoilt_years_later, 
+                                    -comp_index)
+sim_repair_time$year = gsub("Y", "", sim_repair_time$year)
+#sim_repair_time$spoilt_years_later = round(sim_repair_time$spoilt_years_later, 0)
+sim_repair_time$year_spoilt = sim_repair_time$spoilt_years_later + as.numeric(sim_repair_time$year)
+
+table(sim_repair_time$year_spoilt)
+plot(table(sim_repair_time$year_spoilt))
+
+#Tabulate number of 
+
+```
+
+
+## Explaining exponential distribution from first principle
+$$f(x) =  {\lambda}e^{-\lambda x} $$
+
+To understand pdf function here. It's pretty simple. If you run the simulator 1000 times with mean, lambda == 7. Then you plot the distribution, it's mostly likely front-loaded.
+
+If you fit a series of values x to 1000 it will be pretty similar to simulated series of values.
+
+And if you do a mean of the simulated data, it will return close to the mean
+
+```{r}
+data = rexp(1000, 1/7)
+hist(data)
+mean(data)
+```
+
+
+
+
+

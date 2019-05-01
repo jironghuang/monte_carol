@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "4190279748",
     "id" : "AD7DC2C0",
-    "lastKnownWriteTime" : 1556640434,
-    "last_content_update" : 1556640434311,
+    "lastKnownWriteTime" : 1556728840,
+    "last_content_update" : 1556728840909,
     "path" : "~/Desktop/github/monte_carlo/simulate_failure.R",
     "project_path" : "simulate_failure.R",
     "properties" : {
-        "cursorPosition" : "11,22",
+        "cursorPosition" : "17,12",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

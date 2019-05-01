@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556642428678.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4FF2761D",
+    "lastKnownWriteTime" : 1556646395,
+    "last_content_update" : 1556646440778,
+    "path" : "~/Desktop/github/monte_carlo/blog.Rmd",
+    "project_path" : "blog.Rmd",
+    "properties" : {
+        "cursorPosition" : "39,6",
+        "last_setup_crc32" : "8B92AE03bb338d19",
+        "scrollLine" : "20",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
